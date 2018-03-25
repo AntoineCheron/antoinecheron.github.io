@@ -65,6 +65,8 @@ p, li {
 a {
   text-decoration: none;
   color: $dark-grey;
+
+  &:hover { font-weight: bold; }
 }
 
 a.white-link {

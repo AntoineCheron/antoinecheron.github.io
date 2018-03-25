@@ -10,30 +10,7 @@ var Navbar = /** @class */ (function () {
         this.watchActiveTab();
         this.turnNavbarBackgroundToWhiteAfterFirstSection();
     };
-    Navbar.prototype.watchActiveTab = function () {
-        var _this = this;
-        document.addEventListener('mouseover', function (evt) {
-            if (evt.srcElement === null)
-                return;
-            var target = evt.srcElement;
-            if (target === null)
-                return;
-            var usersMouseTargetElementId = target.id;
-            var index = _this.tabs.indexOf(usersMouseTargetElementId);
-            if (index !== -1 && _this.activeTab !== _this.tabs[index]) {
-                var newlyActiveTab = document.getElementById(_this.tabs[index]);
-                if (newlyActiveTab === null)
-                    return;
-                newlyActiveTab.classList.add(ACTIVE_CLASS);
-                if (_this.activeTab !== undefined) {
-                    var previouslyActiveTab = document.getElementById(_this.activeTab);
-                    _this.activeTab = _this.tabs[index];
-                    if (previouslyActiveTab !== null)
-                        previouslyActiveTab.classList.remove(ACTIVE_CLASS);
-                }
-            }
-        }, false);
-    };
+    Navbar.prototype.watchActiveTab = function () {};
     Navbar.prototype.turnNavbarBackgroundToWhiteAfterFirstSection = function () {
         var firstSection = document.getElementById(this.firstSectionId);
         var navbar = document.getElementById(this.id);

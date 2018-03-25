@@ -14,31 +14,13 @@ export class Navbar {
   }
 
   watchActiveTab() : void {
-    document.addEventListener(
-      'mouseover',
-      (evt: MouseEvent) => {
-        if (evt.srcElement === null) return
-        const target: Element = evt.srcElement
-        if (target === null) return
-        const usersMouseTargetElementId: TabId = target.id
-
-        const index = this.tabs.indexOf(usersMouseTargetElementId)
-
-        if (index !== -1 && this.activeTab !== this.tabs[index]) {
-          const newlyActiveTab = document.getElementById(this.tabs[index])
-          if (newlyActiveTab === null) return
-          newlyActiveTab.classList.add(ACTIVE_CLASS)
-
-          if (this.activeTab !== undefined) {
-            const previouslyActiveTab = document.getElementById(this.activeTab)
-            this.activeTab = this.tabs[index]
-            if (previouslyActiveTab !== null)
-              previouslyActiveTab.classList.remove(ACTIVE_CLASS)
-          }
-        }
-      },
-      false
-    )
+    // document.addEventListener(
+    //   'mouseover',
+    //   (evt: MouseEvent) => {
+    //     // TODO
+    //   },
+    //   false
+    // )
   }
 
   turnNavbarBackgroundToWhiteAfterFirstSection(): void {
