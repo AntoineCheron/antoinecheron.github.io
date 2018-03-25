@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <link rel="icon" href="images/favicon.png" />
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+
+  <script defer src="build/minified.js"></script>
+
+  <title>Antoine Cheron</title>
+</head>
+<body>
+
+  <navbar id="navbar" class="navbar navbar-container navbar-zero-height navbar-fixed">
+    <div class="navbar-left">
+      <div class="navbar-item navbar-brand">
+        <a href="/">Antoine Cheron</a>
+      </div>
+    </div>
+    <div class="navbar-right">
+      <div id="about-tab" class="navbar-item navbar-link active"><a href="/">about</a></div>
+      <div id="research-tab" class="navbar-item navbar-link"><a href="/research">research</a></div>
+      <div id="blog-tab" class="navbar-item navbar-link"><a href="https://medium.com/@cheron.antoine">blog</a></div>
+      <div id="contact-tab" class="navbar-item navbar-link"><a href="#contact">contact</a></div>
+    </div>
+  </navbar>
+
+  <section id="first-section" class="category">
+    <div class="row">
+      <div class="col-1">
+
+      </div>
+
+      <div class="col-5">
+        <div>
+          <h1>Hi, I'm Antoine</h1>
+          <p>
+            I am an Inria Ph.D. student trying to solve the scientific problems that
+            prevent us software engineers from building hypermedia APIs, which will
+            lead us to an even more automated and fun world.
+          </p>
+        </div>
+        <div>
+          <div class="buttons-line">
+            <!-- <a class="button button-square rounded" href=""><i class="fab fa-google fa-2x"></i></a> -->
+            <a class="button button-square rounded" href="https://github.com/AntoineCheron"><i class="fab fa-github fa-2x"></i></a>
+            <a class="button button-square rounded" href="https://medium.com/@cheron.antoine"><i class="fab fa-medium-m fa-2x"></i></a>
+            <a class="button button-square rounded button-last" href="https://www.linkedin.com/in/antoine-cheron-581804aa/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+          </div>
+          <div id="logos" class="buttons-line">
+            <a href="http://technologies.fabernovel.com/en/" class="button button-img"><img class="img-32-height" src="images/fabernovel_logo.jpg" /></a>
+            <a href="https://www.inria.fr/en/" class="button button-img"><img class="img-32-height" src="images/inria_logo.jpg" /></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="personal-image" class="flex-row-right paddingless">
+        <img src="images/me.jpg" alt="myself" />
+      </div>
+    </div>
+
+    <img id="scroll-animation" src="images/scroll.gif" width="30px" height="45px" class="center" />
+
+  </section>
+
+  <section id="what-I-do" class="category category-dark">
+    <div class="row">
+      <div class="category-content category-two-col">
+        <div class="category-col-left">
+          <img src="images/hypermedia-example.png" />
+        </div>
+        <div class="category-col-right">
+          <div class="category-title">
+            <h1>What do I do ?</h1>
+            <p class="subtitle">hypermedia as the engine of application state</p>
+          </div>
+          <p>
+            As a Ph.D. student, I'm aiming at solving the scientific problems that
+            still keep developers away from building hypermedia API, 17 years after
+            Roy Fielding presented HATEOAS in his thesis.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-it-matters" class="category">
+    <div class="row">
+      <div class="category-content category-two-col">
+        <div class="category-col-left">
+          <div class="category-title">
+            <h1>Why it matters ?</h1>
+          </div>
+          <p>
+            At Zengularity, it's been more than 4 years that we design and
+            build hypermedia APIs for our clients.
+          </p>
+          <p>
+            These APIs open up a whole lot of new possibilities, usages and
+            automations such as automated testings, type safety,
+            automated composition of services, etc.
+          </p>
+          <p>
+            Now we need to solve some scientific problems in order to make
+            building hypermedia API easy.
+          </p>
+        </div>
+        <div class="category-col-right">
+          <img src="images/matters.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="what-Id-like-to-achieve" class="category">
+    <div class="row">
+      <div class="category-one-col">
+
+        <div class="category-title">
+          <h1>What I'd like to achieve during my Ph.D.</h1>
+          <p class="subtitle text-primary">
+            Any kind of help is welcome
+          </p>
+        </div>
+
+        <ul>
+          <li>Push a standard to W3C</li>
+          <li>Have major contributions in the academic area (ICSE, ...)</li>
+          <li>Have major contributions in the industry (Scala IO, Scala days, Devoxx, ...)</li>
+          <li>Bring tools to developers to ease the development of hypermedia API</li>
+          <li>Demonstrate how hypermedia API can be a game-changer in the future of the web industry</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="category category-dark category-last">
+    <div class="container">
+      <div class="row">
+        <div class="category-content category-two-col">
+          <div class="category-col-left">
+
+            <div class="category-title">
+              <h1>Contact.</h1>
+              <p class="subtitle text-primary">interested in my research ?</p>
+            </div>
+            <p>
+              We can either chat via email, or go get a coffee or grab a beer somewhere in Paris.
+            </p>
+
+            <div>
+              <p class="uppercase font-small"><b>Other subjects I'm interested in</b></p>
+              <p class="icons-group">
+                <i alt="education" class="fas fa-graduation-cap fa-2x"></i>
+                <i alt="entrepreneurship" class="fas fa-briefcase fa-2x"></i>
+                <i alt="how the world is changing" class="fas fa-globe fa-2x"></i>
+                <i alt="cars" class="fas fa-car fa-2x"></i>
+                <i alt="motorbikes" class="fas fa-motorcycle fa-2x"></i>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="category-col-right">
+            <div class="button-group-vertical">
+              <button class="button button-simple bg-white"><span class="text-primary">more about my research</span></button>
+              <a href="mailto:antoine.cheron@inria.fr" class="button button-simple bg-white"><span class="text-primary">send me an email</span></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row center" style="margin-top: 30px;">
+        <div class="inline-link-group">
+          <a class="white-link" href="https://github.com/AntoineCheron"> GitHub </a>
+          <a class="white-link" href="https://medium.com/@cheron.antoine"> Medium </a>
+          <a class="white-link" href="https://www.linkedin.com/in/antoine-cheron-581804aa/"> LinkedIn </i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

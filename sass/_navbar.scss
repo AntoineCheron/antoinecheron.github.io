@@ -1,0 +1,70 @@
+@include font-face('Jaapokki-Substract', '../fonts/Jaapokki');
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0 20px;
+
+  width: calc(100% - 40px);
+  height: 70px;
+}
+
+.navbar-container {
+  @extend .container;
+  max-width: none;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+}
+
+.navbar-zero-height {
+  margin-bottom: -70px;
+}
+
+.navbar-left {
+  display: flex;
+}
+
+.navbar-right {
+  margin-left: auto;
+  display: flex;
+}
+
+.navbar-item {
+  margin: 0 30px;
+}
+
+.navbar-brand {
+  font-family: 'Jaapokki-Substract';
+  color: $primary;
+  font-size: 1.5rem;
+
+  &>a {
+    font-family: 'Jaapokki-Substract';
+    color: $primary;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+}
+
+.navbar-link>a {
+  font-family: 'Jaapokki-Substract';
+  color: $dark-grey;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .9rem;
+}
+
+.navbar-link.active>a::after {
+  content: '';
+  display: block;
+  width: 18px; height: 0;
+  border-bottom: 4px solid $primary;
+}

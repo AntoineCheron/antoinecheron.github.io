@@ -1,0 +1,50 @@
+.buttons-line {
+  display: flex;
+  flex-direction: row;
+
+  &>.button { margin-right: 30px; }
+  &>.button.button-last { margin-right: 0; margin-bottom: 0; }
+}
+
+.button {
+  border: 1px solid $dark;
+  background-color: white;
+  color: $dark;
+
+  font-weight: bold;
+
+  &:hover { box-shadow: 0 1px 4px black; }
+  &:focus, &:active { outline: none; }
+}
+
+.button-img { border: none; }
+.button-img:hover { box-shadow: none; }
+
+.button-square {
+  padding: 9px;
+  width: 30px;
+  height: 30px;
+}
+
+.button-group {
+  display: flex;
+}
+
+.button-group-vertical {
+  @extend .button-group;
+
+  flex-direction: column;
+  justify-content: center;
+
+  &>.button { margin: 20px 0; }
+}
+
+.button-simple {
+  padding: 35px 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .9rem;
+  text-align: center;
+
+  cursor: pointer;
+}
