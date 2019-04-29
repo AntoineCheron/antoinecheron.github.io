@@ -11,6 +11,10 @@
   color: #333447;
 }
 
+.white {
+  color: white;
+}
+
 html,
 body {
   height: 100%;
@@ -100,6 +104,10 @@ ul > li:before {
 
 .font-heavy {
   font-weight: 700;
+}
+
+.font-huge {
+  font-size: 8rem;
 }
 
 .subtitle {
@@ -311,6 +319,11 @@ ul > li:before {
   min-width: 100%;
   height: auto;
   width: auto;
+}
+
+.l-img-container-50 {
+  width: 50%;
+  height: 50%;
 }
 
 .marginless {
