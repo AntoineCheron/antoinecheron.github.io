@@ -1,0 +1,67 @@
+.card {
+    min-width: 300px;
+    width: calc(33% - 30px);
+    margin: 10px 15px;
+
+    @extend .rounded;
+    @extend .with-drop-shadow-light;
+}
+
+.card-half {
+    height: 9rem;
+}
+
+.card-header {
+    @extend .card-half;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: pink;
+}
+
+.card-body {
+    @extend .card-half;
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    padding: 12px 18px;
+
+    p { margin: 4px 0; }
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.card-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 1;
+
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.card-subtitle {
+    margin-top: 0 !important;
+    line-height: 1;
+}
+
+.card-read-button {    
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 80px; // makes sure it is a circle
+
+    text-align: center;
+    background: $primary;
+    color: white;
+
+    &:hover { @extend .with-drop-shadow-light; };
+}

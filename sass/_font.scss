@@ -7,10 +7,6 @@ $font-weight-regular: 400;
 $font-weight-heavy: 700;
 $font-height: 1.5;
 
-// colors
-$dark-grey: #333447;
-$dark-gray: #333447; // for the Americans
-
 // universal
 
 html,
@@ -25,8 +21,8 @@ body {
 }
 
 body {
+  @extend .text-base-color;
   font-family: $font-family;
-  color: $dark-grey;
   line-height: $font-height;
 }
 
@@ -58,7 +54,7 @@ h6 {
 
 p, li {
   font-size: 1.125rem;
-  font-weight: 200;
+  font-weight: $font-weight-regular;
   line-height: 1.8;
 }
 
@@ -73,23 +69,26 @@ a.white-link {
   color: white;
 }
 
-ul {
+ul, ol {
   list-style: none;
   padding-left: 0;
+  margin-top: 0;
 }
 
-li { padding-left: 10px; }
+li {
+  padding-left: 36px;
+  position: relative;
+}
 
-li:before {
+ul>li:before {
   display: inline-block;
-  content: " ";
-  background-image: url('../images/oval-blue.svg');
+  content: url('../images/oval-blue.svg');
 
   width: 1.125rem;
   height: 1.125rem;
 
-  position: relative;
-  left: -10px;
+  position: absolute;
+  left: 8px;
   top: 4px;
 }
 

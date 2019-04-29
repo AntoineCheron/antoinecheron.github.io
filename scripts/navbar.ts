@@ -1,10 +1,10 @@
 export type TabId = string
 
-const ACTIVE_CLASS = 'active'
+// const ACTIVE_CLASS = 'active'
 const WHITE_BG_CLASS_NAME = 'bg-white'
 
 export class Navbar {
-  private activeTab: TabId | undefined
+  // private activeTab: TabId | undefined
 
   constructor(public id: string, public tabs: Array<TabId>, public firstSectionId: string) {}
 

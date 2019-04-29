@@ -1,5 +1,6 @@
 .rounded {
   border-radius: 6px;
+  overflow: hidden;
 }
 
 img.img-32-height {
@@ -13,4 +14,28 @@ img.img-32-height {
 
 .no-margin-bottom {
   margin-bottom: 0;
+}
+
+.with-drop-shadow-light {
+  box-shadow: 0 1px 6px rgba(0,0,0,.3);
+}
+
+.tag {
+  position: relative;
+
+  color: $primary;
+  font-weight: bold;
+  font-size: .7rem;
+
+  &::before { content:'#' }
+}
+
+.date {
+  padding-left: 8px;
+  vertical-align: text-bottom;
+  line-height: 1.7;
+
+  font-size: .8rem;
+  text-transform: uppercase;
+  color: $grey;
 }

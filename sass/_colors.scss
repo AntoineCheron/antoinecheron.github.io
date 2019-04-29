@@ -2,6 +2,10 @@ $primary: #008AFD;
 $dark: #4A4A4A;
 $grey: #9B9B9B;
 $light-grey: #D6D6D6;
+$dark-grey: #333447;
+$dark-gray: #333447; // for the Americans
 $blue-grey-darker: #2E333B;
 
 .text-primary { color: $primary; }
+.text-lighter-color { color: $grey; }
+.text-base-color { color: $dark-grey; }

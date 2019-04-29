@@ -7,20 +7,20 @@
   <link rel="stylesheet" href="stylesheets/style.css" />
   <link rel="icon" href="images/favicon.png" />
 
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
 
   <script defer src="build/minified.js"></script>
 
-  <title>Antoine Cheron</title>
+  <title>Antoine Cheron | Official Home Page | Site Officiel</title>
 </head>
 <body>
 
   <navbar id="navbar" class="navbar navbar-container navbar-zero-height navbar-fixed">
     <div class="navbar-left">
       <div class="navbar-item navbar-brand">
-        <a href="/">Antoine Cheron</a>
+        <a href="/">Antoine Cheron.</a>
       </div>
     </div>
     <div class="navbar-right">
@@ -41,9 +41,9 @@
         <div>
           <h1>Hi, I'm Antoine</h1>
           <p>
-            I am an Inria Ph.D. student trying to solve the scientific problems that
-            prevent us software engineers from building hypermedia APIs, which will
-            lead us to an even more automated and fun world.
+            I'm a Computer-Science Ph.D. student interested in Semantic REST APIs, Linked Data
+            and distributed architectures who try to make pragmatic things people can reuse.
+            Also, sometimes I write articles and talk to colleagues or conferences.
           </p>
         </div>
         <div>
@@ -51,17 +51,19 @@
             <!-- <a class="button button-square rounded" href=""><i class="fab fa-google fa-2x"></i></a> -->
             <a class="button button-square rounded" href="https://github.com/AntoineCheron"><i class="fab fa-github fa-2x"></i></a>
             <a class="button button-square rounded" href="https://medium.com/@cheron.antoine"><i class="fab fa-medium-m fa-2x"></i></a>
-            <a class="button button-square rounded button-last" href="https://www.linkedin.com/in/antoine-cheron-581804aa/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            <a class="button button-square rounded" href="https://www.linkedin.com/in/antoine-cheron-581804aa/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            <a class="button button-square rounded button-last" href="/research.html"><i class="fas fa-university fa-2x"></i></a>
           </div>
           <div id="logos" class="buttons-line">
-            <a href="http://technologies.fabernovel.com/en/" class="button button-img"><img class="img-32-height" src="images/fabernovel_logo.jpg" /></a>
+            <a href="http://technologies.fabernovel.com/en/" class="button button-img"><img class="img-32-height" src="images/fabernovel_logo_new.png" /></a>
+            <a href="https://www.diverse-team.fr/" class="button button-img"><img class="img-32-height" src="https://diverse-team.github.io/img/diverse.png" /></a>
             <a href="https://www.inria.fr/en/" class="button button-img"><img class="img-32-height" src="images/inria_logo.jpg" /></a>
           </div>
         </div>
       </div>
 
       <div id="personal-image" class="flex-row-right paddingless">
-        <img src="images/me.jpg" alt="myself" />
+        <img src="images/me.jpg" alt="A picture of myself" />
       </div>
     </div>
 
@@ -69,7 +71,7 @@
 
   </section>
 
-  <section id="what-I-do" class="category category-dark">
+  <section id="research" class="category category-dark">
     <div class="row">
       <div class="category-content category-two-col">
         <div class="category-col-left">
@@ -77,48 +79,28 @@
         </div>
         <div class="category-col-right">
           <div class="category-title">
-            <h1>What do I do ?</h1>
-            <p class="subtitle">hypermedia as the engine of application state</p>
+            <h1>The Research I Do</h1>
+            <p class="subtitle">As a Computer-Science Ph.D. student</p>
           </div>
           <p>
-            As a Ph.D. student, I'm aiming at solving the scientific problems that
-            still keep developers away from building hypermedia API, 17 years after
-            Roy Fielding presented HATEOAS in his thesis.
+            I focus my research in the field of distributed information systems
+            towards two goals:
           </p>
+            <ul>
+              <li>reducing the coupling between components exposing or consuming Web APIs</li>
+              <li>making the IS easier to query with no prior knowledge of its architecture</li>
+            </ul>
+          <p>
+            Therefore, I read a lot about REST APIs, the Semantic Web, Linked Data,
+            Open Data, Linked Data Platform and Semantic REST APIs.
+          </p>
+          <p><a class="button button-dark rounded" href="/research.html"><i class="fas fa-university"></i> Discover more</a></p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="why-it-matters" class="category">
-    <div class="row">
-      <div class="category-content category-two-col">
-        <div class="category-col-left">
-          <div class="category-title">
-            <h1>Why it matters ?</h1>
-          </div>
-          <p>
-            At Zengularity, it's been more than 4 years that we design and
-            build hypermedia APIs for our clients.
-          </p>
-          <p>
-            These APIs open up a whole lot of new possibilities, usages and
-            automations such as automated testings, type safety,
-            automated composition of services, etc.
-          </p>
-          <p>
-            Now we need to solve some scientific problems in order to make
-            building hypermedia API easy.
-          </p>
-        </div>
-        <div class="category-col-right">
-          <img src="images/matters.jpg" />
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="what-Id-like-to-achieve" class="category">
+  <section id="what-Id-like-to-achieve" class="category category-dark">
     <div class="row">
       <div class="category-one-col">
 
@@ -130,13 +112,175 @@
         </div>
 
         <ul>
-          <li>Push a standard to W3C</li>
-          <li>Have major contributions in the academic area (ICSE, ...)</li>
+          <li>Contribute to W3C standards</li>
+          <li>Do at least one contribution to a major conference or journal (WWW, ICSE, ...)</li>
           <li>Have major contributions in the industry (Scala IO, Scala days, Devoxx, ...)</li>
-          <li>Bring tools to developers to ease the development of hypermedia API</li>
-          <li>Demonstrate how hypermedia API can be a game-changer in the future of the web industry</li>
+          <li>Bring tools to developers to ease the development of Semantic REST APIs</li>
         </ul>
 
+      </div>
+    </div>
+  </section>
+
+  <section id="blog-posts" class="category">
+    <div class="row">
+      <div class="category-one-col">
+          <div class="category-title">
+            <h1>Blog Posts</h1>
+            <p class="subtitle text-primary">I wrote 13 articles, in French or English (or both), for diverse targets and purposes.</p>
+          </div>
+
+          <div class="l-grid">
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="l-img-container"><img src="https://www.fabernovel.com/content/uploads/2019/03/Article_5-1024x414.png" /></div>
+                </div>
+                <div class="card-body">
+                  <p class="l-tags card-subtitle">
+                    <span class="tag">SemanticREST</span>
+                    <span class="tag">Thesis</span>
+                    <span class="tag">Vision</span>
+                    <span class="tag">french&english</span>
+                  </p>
+                  <h3 class="card-title">Hypermedia and Semantics in APIs: a powerful combination</h3>
+                  <div class="card-footer">
+                    <p><i class="fas fa-clock font-regular text-base-color"></i><span class="date font-heavy">Jan, 19 2018</span></p>
+                    <p>
+                      <a class="card-read-button" target="_blank" href="https://en.fabernovel.com/insights/tech-en/hypermedia-and-semantics-in-apis-a-powerful-combination">
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+          <div class="card">
+            <div class="card-header">
+                <div class="l-img-container"><img src="https://www.fabernovel.com/content/uploads/2019/03/Couverture-1.png" /></div>
+            </div>
+            <div class="card-body">
+              <p class="l-tags card-subtitle">
+                <span class="tag">Study</span>
+                <span class="tag">InformationSystem</span>
+                <span class="tag">french&english</span>
+              </p>
+              <h3 class="card-title">Study: What are IS’ main issues?</h3>
+              <div class="card-footer">
+                <p><i class="fas fa-clock font-regular text-base-color"></i><span class="date font-heavy">Jan, 19 2018</span></p>
+                <p>
+                  <a class="card-read-button" target="_blank" href="https://en.fabernovel.com/insights/tech-en/study-what-are-is-main-issues">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+            <div class="card">
+              <div class="card-header">
+                  <div class="l-img-container"><img src="https://www.fabernovel.com/content/uploads/2019/03/Couverture-1.png" /></div>
+              </div>
+              <div class="card-body">
+                <p class="l-tags card-subtitle">
+                  <span class="tag">french&english</span>
+                  <span class="tag">Series</span>
+                  <span class="tag">API</span>
+                </p>
+                <h3 class="card-title">[series] APIs with superpowers</h3>
+                <div class="card-footer">
+                  <p><i class="fas fa-clock font-regular text-base-color"></i><span class="date font-heavy">Mar & Apr 2019</span></p>
+                  <p>
+                    <a class="card-read-button" target="_blank" href="https://en.fabernovel.com/insights/stories/apis-with-superpowers">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                  <div class="l-img-container"><img src="https://cdn-images-1.medium.com/max/800/0*MPcgPwVYj6m7C1Ta." /></div>
+              </div>
+              <div class="card-body">
+                <p class="l-tags card-subtitle">
+                  <span class="tag">Java</span>
+                  <span class="tag">ReactiveProgramming</span>
+                  <span class="tag">Tutorial</span>
+                </p>
+                <h3 class="card-title">[Tuto] Building a Reactive RESTful API with Spring WebFlux Java</h3>
+                <div class="card-footer">
+                  <p><i class="fas fa-clock font-regular text-base-color"></i><span class="date font-heavy">May, 11 2018</span></p>
+                  <p>
+                    <a class="card-read-button" target="_blank" href="https://medium.com/@cheron.antoine/tuto-building-a-reactive-restful-api-with-spring-webflux-java-258fd4dbae41">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                  <div class="l-img-container"><img src="https://cdn-images-1.medium.com/max/800/1*jxkI_DLbL1xJMeBzNsj4Mw.jpeg" /></div>
+              </div>
+              <div class="card-body">
+                <p class="l-tags card-subtitle">
+                  <span class="tag">Java</span>
+                  <span class="tag">Reactor</span>
+                  <span class="tag">Tutorial</span>
+                </p>
+                <h3 class="card-title">[Reactor Java #4] How to take control over the execution of Mono and Flux ?</h3>
+                <div class="card-footer">
+                  <p><i class="fas fa-clock font-regular text-base-color"></i><span class="date font-heavy">Jan, 21 2018</span></p>
+                  <p>
+                    <a class="card-read-button" target="_blank" href="https://medium.com/@cheron.antoine/reactor-java-4-how-to-take-control-over-the-execution-of-mono-and-flux-ead31dc066">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                  <div class="l-img-container"><img src="https://cdn-images-1.medium.com/max/800/1*d7gQ1HJAQ8awBU8l_0j8ag.jpeg" /></div>
+              </div>
+              <div class="card-body">
+                <p class="l-tags card-subtitle">
+                  <span class="tag">Java</span>
+                  <span class="tag">Reactor</span>
+                  <span class="tag">Tutorial</span>
+                </p>
+                <h3 class="card-title">[Reactor Java #2] How to manipulate the data inside Mono and Flux ?</h3>
+                <div class="card-footer">
+                  <p><i class="fas fa-clock font-regular text-base-color"></i><span class="date font-heavy">Jan, 18 2018</span></p>
+                  <p>
+                    <a class="card-read-button" target="_blank" href="https://medium.com/@cheron.antoine/reactor-java-2-how-to-manipulate-the-data-inside-mono-and-flux-b36ae383b499">
+                      <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog-posts" class="category category-dark">
+    <div class="row">
+      <div class="category-one-col">
+          <div class="category-title">
+            <h1>In Progress ...</h1>
+            <p class="subtitle text-primary">This website is under construction. Please come back later to know more about me.</p>
+          </div>
+
+        </div>
       </div>
     </div>
   </section>

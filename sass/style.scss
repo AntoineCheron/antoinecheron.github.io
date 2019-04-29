@@ -12,6 +12,7 @@
 @import 'navbar';
 @import 'buttons';
 @import 'category';
+@import 'card';
 
 body {
   background-color: white;
@@ -19,14 +20,16 @@ body {
 
 img {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
 }
 
 #personal-image {
   max-width: 50%;
   min-height: 450px;
-  height: 90vh;
+  height: 98vh;
   float: right;
+
+  &>img { height: 98vh; }
 }
 
 #logos { margin-top: 4em; }
